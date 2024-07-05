@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <h2>Games to play</h2>
+    <div class="content">
+        <div id="games">
+            <img id="Game1" src="C:\Users\y computer\Downloads\Game1.jpg" alt="Ludo Game">
+            <img id="Game2" src="C:\Users\y computer\Downloads\Game2.jpg" alt="Chess">
+            <img id="Game3" src="C:\Users\y computer\Downloads\Game3.jpg" alt="Street Racer">
+            <img id="Game4" src="C:\Users\y computer\Downloads\Game4.jpg" alt="Penalty Shooters">
+        </div>
+        <div id="main" >
+            <img id="main-img" src="C:\Users\y computer\Downloads\Game1.jpg" alt="Ludo Game">
+            <p id="text-center">Ludo Game</p>
+        </div>
+    </div>
+    <script>
+        console.log("testing")
+        console.log(document.querySelector("#Game1"))
+        document.querySelector("#Game1").onclick = function() {
+            document.querySelector("#main-img").src="C:\Users\y computer\Downloads\Game1.jpg";
+            document.querySelector("#main-img").alt="Ludo Game";
+            document.querySelector("#text-center").innerHTML="Ludo Game";
+        }
+        console.log(document.querySelector("#Game2"))
+        document.querySelector("#Game2").onclick = function() {
+            document.querySelector("#main-img").src="C:\Users\y computer\Downloads\Game2.jpg";
+            document.querySelector("#main-img").alt="Chess";
+            document.querySelector("#text-center").innerHTML="Chess";
+        }  
+        console.log(document.querySelector("#Game3")) 
+        document.querySelector("#Game3").onclick = function() {
+            document.querySelector("#main-img").src="C:\Users\y computer\Downloads\Game3.jpg";   
+            document.querySelector("#main-img").alt="Street Racer";
+            document.querySelector("#text-center").innerHTML="Street Racer";
+         
+        }
+        console.log(document.querySelector("#Game4"))
+        document.querySelector("#Game4").onclick = function() {
+            document.querySelector("#main-img").src="C:\Users\y computer\Downloads\Game4.jpg";
+            document.querySelector("#main-img").alt="Penalty Shooters";
+            document.querySelector("#text-center").innerHTML="Penalty Shooters";
+            
+        }
+    </script>
+</body>
+</html>
